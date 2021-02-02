@@ -1,0 +1,7 @@
+,类型,name,period,MD5,Website,transactionMode,adFormat,device,Market,"Tracking Imp (Y/N)
+可否曝光监测","Tracking Click (Y/N)
+可否点击监测","总价
+TotalNetCost","折后打包价
+Package:",packageid,"总广告曝光(000')
+TotalImp(000')","预估总广告点击数字
+EstedTotalClicks",日期,打点信息,adFormat&device
