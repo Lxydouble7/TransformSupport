@@ -1,0 +1,15 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Test:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Test_jar</output-path>
+    <root id="archive" name="Test.jar">
+      <element id="module-output" name="Test" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/web/WEB-INF/lib/activation.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/web/WEB-INF/lib/additionnal.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/web/WEB-INF/lib/commons-dbutils-1.7.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/web/WEB-INF/lib/commons-fileupload-1.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/web/WEB-INF/lib/commons-io-2.8.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/web/WEB-INF/lib/jstl.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/web/WEB-INF/lib/standard.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

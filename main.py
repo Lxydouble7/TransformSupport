@@ -6,7 +6,9 @@ import numpy as np
 import sys
 
 def GetadFormat():
-    file = pd.read_excel('C:/Users/citish02/Desktop/TransformSupport/newTP排期需求&TP字典值.xlsx', 'TP字典值')
+    file = pd.read_excel('C:/Users/Administrator/Desktop/TransformSupport/source/字典.xlsx')
+    #file = pd.read_excel('C:/Users/citish02/Desktop/TransformSupport/source/字典.xlsx')
+    #file = pd.read_excel('C:/Users/citish02/Desktop/TransformSupport/newTP排期需求&TP字典值.xlsx', 'TP字典值')
     adin = list(file['adFormat-in'])
     adout = list(file['adFormat-out'])
     while np.nan in adin:
@@ -15,7 +17,9 @@ def GetadFormat():
     return dict(zip(adin, adout))
 
 def GetDeviceFormat():
-    file = pd.read_excel('C:/Users/citish02/Desktop/TransformSupport/newTP排期需求&TP字典值.xlsx', 'TP字典值')
+    file = pd.read_excel('C:/Users/Administrator/Desktop/TransformSupport/source/字典.xlsx')
+    #file = pd.read_excel('C:/Users/citish02/Desktop/TransformSupport/source/字典.xlsx')
+    #file = pd.read_excel('C:/Users/citish02/Desktop/TransformSupport/newTP排期需求&TP字典值.xlsx', 'TP字典值')
     adin = list(file['device-in'])
     adout = list(file['device-out'])
     while np.nan in adin:
@@ -23,8 +27,8 @@ def GetDeviceFormat():
     adout = adout[0:len(adin)]
     return dict(zip(adin, adout))
 
-
-file = pd.read_excel('C:/Users/citish02/Desktop/TransformSupport/raw/' + sys.argv[1],'TP源文件-宏处理前的排期')
+file = pd.read_excel('C:/Users/Administrator/Desktop/TransformSupport/raw/' + sys.argv[1])
+#file = pd.read_excel('C:/Users/citish02/Desktop/TransformSupport/raw/' + sys.argv[1],'TP源文件-宏处理前的排期')
 #file = pd.read_excel('new TP排期需求&TP字典值.xlsx','TP源文件-宏处理前的排期')
 adFormat_dict = GetadFormat()
 device_dict = GetDeviceFormat()
@@ -153,6 +157,6 @@ for i in range(2,len(file)):
             "预估总广告点击数字\nEstedTotalClicks":[file.iloc[i, 15]], "日期":[file.iloc[1, j]], "打点信息":[file.iloc[i, j]], "adFormat&device":[file.iloc[i, 5]]}),ignore_index=True)
 
 #print(data)
-
-data.to_csv('C:/Users/citish02/Desktop/TransformSupport/done/pro' + sys.argv[1].split(".")[0] + '.csv',encoding="gb18030",index=False)
+data.to_csv('C:/Users/Administrator/Desktop/TransformSupport/done/pro' + sys.argv[1].split(".")[0] + '.csv',encoding="gb18030",index=False)
+#data.to_csv('C:/Users/citish02/Desktop/TransformSupport/done/pro' + sys.argv[1].split(".")[0] + '.csv',encoding="gb18030",index=False)
 #file.to_csv('out.csv',encoding="gb18030", header=None)
